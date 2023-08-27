@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-.body {
-    overflow: hidden;
-}
-
 .header {
     display: grid;
     margin: 92px 49px 92px 51px;
@@ -62,7 +58,9 @@
 }
 
 .cover {
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
+    max-width: 100%;
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
@@ -311,8 +309,11 @@
 }
 
 .about__text-column {
+    display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
+    gap: 25px;
+    margin-top: 10px;
 }
 
 .about__text {
@@ -322,15 +323,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 25px;
-}
-
-.about__text-first {
-    margin-top: 10px;
-}
-
-.about__text-last {
-    margin-bottom: 0px;
+    
 }
 
 .footer {
